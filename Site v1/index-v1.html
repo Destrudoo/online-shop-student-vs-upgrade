@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upgrade.store | Версия 2.0</title>
+    <link rel="stylesheet" href="style-v2.css">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <div class="logo">
+                <h1>upgrade<span>.store</span></h1>
+            </div>
+            <div class="cart-widget" id="cartWidget">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count" id="cartCount">0</span> товаров
+            </div>
+        </header>
+
+        <main>
+            <!-- Товары будут отрисованы через JS -->
+            <div class="product-grid" id="productGrid"></div>
+
+            <!-- Блок корзины -->
+            <div class="cart-section" id="cartSection">
+                <h2>Ваша корзина</h2>
+                <div class="cart-items" id="cartItems">
+                    <p class="empty-cart">Корзина пуста</p>
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-total" id="cartTotal">0 ₽</div>
+                    <button class="clear-cart" id="clearCart">Очистить корзину</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>✦ Апгрейд версия: корзина в localStorage, итоговая сумма, удаление ✦</p>
+            <p class="small">Нажмите на товар, чтобы добавить в корзину</p>
+        </footer>
+    </div>
+
+    <script src="script-v2.js"></script>
+</body>
+</html>
